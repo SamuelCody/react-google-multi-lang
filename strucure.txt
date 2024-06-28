@@ -1,7 +1,5 @@
 react-google-multi-lang/
 ├── src/
-│   ├── components/
-│   │   ├── LanguageSwitcher.tsx
 │   ├── hoc/
 │   │   └── withTranslation.tsx
 │   ├── providers/
@@ -9,8 +7,6 @@ react-google-multi-lang/
 │   ├── utils/
 │   │   └── decodeHtmlEntities.ts
 │   ├── index.ts
-├── types/
-│   └── index.d.ts
 ├── .prettierrc
 ├── .eslintrc.json
 ├── package.json
