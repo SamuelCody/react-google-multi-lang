@@ -1,0 +1,19 @@
+react-google-multi-lang/
+├── src/
+│   ├── components/
+│   │   ├── LanguageSwitcher.tsx
+│   ├── hoc/
+│   │   └── withTranslation.tsx
+│   ├── providers/
+│   │   └── TranslationProvider.tsx
+│   ├── utils/
+│   │   └── decodeHtmlEntities.ts
+│   ├── index.ts
+├── types/
+│   └── index.d.ts
+├── .prettierrc
+├── .eslintrc.json
+├── package.json
+├── tsconfig.json
+├── README.md
+└── .gitignore
