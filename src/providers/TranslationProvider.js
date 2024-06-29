@@ -1,4 +1,10 @@
-import React, { createContext, useState, useContext, useCallback, useEffect } from 'react';
+import React, {
+  createContext,
+  useState,
+  useContext,
+  useCallback,
+  useEffect,
+} from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 
@@ -45,7 +51,8 @@ const TranslationProvider = ({ children, apiKey, defaultLanguage = 'en' }) => {
           },
         });
 
-        const translatedText = response.data.data.translations[0].translatedText;
+        const translatedText =
+          response.data.data.translations[0].translatedText;
         setTranslations((prev) => ({ ...prev, [cacheKey]: translatedText }));
         return translatedText;
       } catch (error) {
@@ -57,7 +64,9 @@ const TranslationProvider = ({ children, apiKey, defaultLanguage = 'en' }) => {
   );
 
   return (
-    <TranslationContext.Provider value={{ language, setLanguage, translateText }}>
+    <TranslationContext.Provider
+      value={{ language, setLanguage, translateText }}
+    >
       {children}
     </TranslationContext.Provider>
   );

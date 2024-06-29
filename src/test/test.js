@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { TranslationProvider, withTranslation, useTranslation } from 'react-google-multi-lang';
+import {
+  TranslationProvider,
+  withTranslation,
+  useTranslation,
+} from 'react-google-multi-lang';
 
 const CustomLanguageSwitcher = () => {
   const { setLanguage } = useTranslation();
@@ -24,7 +28,10 @@ const MyComponent = () => (
 const TranslatedComponent = withTranslation(MyComponent);
 
 const App = () => (
-  <TranslationProvider apiKey={process.env.REACT_APP_TRANSLATION_API} defaultLanguage="en">
+  <TranslationProvider
+    apiKey={process.env.REACT_APP_TRANSLATION_API}
+    defaultLanguage="en"
+  >
     <CustomLanguageSwitcher />
     <TranslatedComponent />
   </TranslationProvider>
