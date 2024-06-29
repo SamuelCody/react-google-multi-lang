@@ -24,7 +24,7 @@ const MyComponent = () => (
 const TranslatedComponent = withTranslation(MyComponent);
 
 const App = () => (
-  <TranslationProvider>
+  <TranslationProvider apiKey={process.env.REACT_APP_TRANSLATION_API} defaultLanguage="en">
     <CustomLanguageSwitcher />
     <TranslatedComponent />
   </TranslationProvider>
