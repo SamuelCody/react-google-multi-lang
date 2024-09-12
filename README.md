@@ -35,6 +35,15 @@ root.render(
   </React.StrictMode>
 );
 
+//with navigation
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
+    <TranslationProvider apiKey={translate} defaultLanguage="en">
+      <App />
+    </TranslationProvider>
+  </BrowserRouter>
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
@@ -139,6 +148,14 @@ ReactDOM.render(
   </TranslationProvider>,
   document.getElementById('root')
 );
+
+or
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
+    <TranslationProvider apiKey={translate} defaultLanguage="en">
+      <App />
+    </TranslationProvider>
+  </BrowserRouter>
 
 // src/CustomLanguageSwitcher.js
 import React from 'react';
