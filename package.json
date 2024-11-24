@@ -3,6 +3,7 @@
     "version": "1.0.5",
     "description": "A library to support multi-language translation in React apps using Google Translation API.",
     "main": "dist/index.js",
+    "types": "index.d.ts",
     "scripts": {
       "build": "NODE_ENV=production babel src --out-dir dist",
       "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
