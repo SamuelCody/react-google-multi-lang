@@ -1,6 +1,6 @@
 {
     "name": "react-google-multi-lang",
-    "version": "1.0.5",
+    "version": "1.0.7",
     "description": "A library to support multi-language translation in React apps using Google Translation API.",
     "main": "dist/index.js",
     "types": "index.d.ts",
