@@ -88,6 +88,9 @@ const MyComponent = () => (
   <div>
     <h1>Hello, World!</h1>
     <p>This is a translatable text.</p>
+    <p class="no-translate">This is a translatable text.</p>
+    <code>This text will not be translated.</code>
+    <pre>This block will not be translated either.</pre>
   </div>
 );
 
