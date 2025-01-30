@@ -10,6 +10,13 @@ export const withTranslation = (Component) => {
 
     useEffect(() => {
       const translateElement = async (element) => {
+        // Skip translation for elements with a specific class or tag
+        if (element.classList && element.classList.contains('no-translate')) {
+          return;
+        }
+        if (element.tagName === 'CODE' || element.tagName === 'PRE') {
+          return; // Skip translation for <code> and <pre> tags
+        }
         if (element.nodeType === Node.TEXT_NODE && element.nodeValue.trim()) {
           const translated = await translateText(element.nodeValue, language);
           element.nodeValue = decodeHtmlEntities(translated);
