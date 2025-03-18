@@ -1,6 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from '../providers/TranslationProvider';
 
+// Add HTML entity decoder
+const decodeHTMLEntities = (text) => {
+  const textarea = document.createElement('textarea');
+  textarea.innerHTML = text;
+  return textarea.value;
+};
+
 export const withTranslation = (Component) => {
   const WithTranslationComponent = (props) => {
     const { language, translateText } = useTranslation();
@@ -37,10 +44,12 @@ export const withTranslation = (Component) => {
             }
 
             if (textNodes.length > 0) {
-              // Store original texts if not already stored
               textNodes.forEach((node) => {
                 if (!originalTextsRef.current.has(node)) {
-                  originalTextsRef.current.set(node, node.nodeValue);
+                  originalTextsRef.current.set(
+                    node,
+                    decodeHTMLEntities(node.nodeValue)
+                  );
                 }
               });
 
@@ -57,7 +66,10 @@ export const withTranslation = (Component) => {
               );
 
               const translationMap = Object.fromEntries(
-                uniqueTexts.map((text, index) => [text, results[index]])
+                uniqueTexts.map((text, index) => [
+                  text,
+                  decodeHTMLEntities(results[index]),
+                ])
               );
 
               textNodes.forEach((node) => {
