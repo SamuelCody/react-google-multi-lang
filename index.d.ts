@@ -1,4 +1,4 @@
-declare module 'react-google-multi-lang' {
+declare module 'real-react-google-multi-lang' {
   import React, { ReactNode } from 'react';
 
   export interface TranslationProviderProps {
