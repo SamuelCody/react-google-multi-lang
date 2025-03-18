@@ -33,8 +33,12 @@ const TranslationProvider = ({ children, apiKey, defaultLanguage = 'en' }) => {
 
   const translateText = useCallback(
     async (text, targetLanguage) => {
+      // Store original text for default language
+      const originalText = text;
+
+      // Return original text if target language is default
       if (targetLanguage === defaultLanguage) {
-        return text;
+        return originalText;
       }
 
       const cacheKey = `${text}-${targetLanguage}`;
@@ -54,10 +58,10 @@ const TranslationProvider = ({ children, apiKey, defaultLanguage = 'en' }) => {
         const translatedText =
           response.data.data.translations[0].translatedText;
 
-        // Batch update translations cache
         setTranslations((prev) => ({
           ...prev,
           [cacheKey]: translatedText,
+          [`${translatedText}-${defaultLanguage}`]: originalText, // Store reverse mapping
         }));
 
         return translatedText;
