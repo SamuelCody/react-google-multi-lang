@@ -1,4 +1,3 @@
-
 # react-google-multi-lang with Redux Integration
 
 A React library to support multi-language translation in React apps using Google Translation API, integrated with Redux for state management.
@@ -183,4 +182,4 @@ export default App;
 
 ## License
 
-MIT © [Boniface Mwanza](https://github.com/bonifacemwanza)
+MIT © [Samuel Ayinde](https://github.com/samuelcody)

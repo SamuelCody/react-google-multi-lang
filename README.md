@@ -1,4 +1,3 @@
-
 # react-google-multi-lang
 
 A React library to support multi-language translation in React apps using Google Translation API.
@@ -146,7 +145,7 @@ import App from './App';
 import { TranslationProvider } from 'react-google-multi-lang';
 
 ReactDOM.render(
-  
+
     <App />
   </TranslationProvider>,
   document.getElementById('root')
@@ -208,4 +207,4 @@ export default App;
 
 ## License
 
-MIT © [Boniface Mwanza](https://github.com/bonifacemwanza)
+MIT © [Samuel Ayinde](https://github.com/samuelcody)

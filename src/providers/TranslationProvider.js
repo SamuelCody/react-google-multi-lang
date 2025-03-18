@@ -53,7 +53,13 @@ const TranslationProvider = ({ children, apiKey, defaultLanguage = 'en' }) => {
 
         const translatedText =
           response.data.data.translations[0].translatedText;
-        setTranslations((prev) => ({ ...prev, [cacheKey]: translatedText }));
+
+        // Batch update translations cache
+        setTranslations((prev) => ({
+          ...prev,
+          [cacheKey]: translatedText,
+        }));
+
         return translatedText;
       } catch (error) {
         console.error('Error translating text:', error);
