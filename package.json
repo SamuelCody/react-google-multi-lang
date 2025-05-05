@@ -1,6 +1,6 @@
 {
   "name": "real-react-google-multi-lang",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A library to support multi-language translation in React apps using Google Translation API.",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -48,7 +48,7 @@
     "prettier": "^2.8.8"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   }
 }
