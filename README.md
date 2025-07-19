@@ -1,4 +1,4 @@
-# react-google-multi-lang
+# real-react-google-multi-lang
 
 A React library to support multi-language translation in React apps using Google Translation API.
 
@@ -7,7 +7,7 @@ A React library to support multi-language translation in React apps using Google
 To install the package, run:
 
 ```bash
-npm install react-google-multi-lang
+npm install real-react-google-multi-lang
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { TranslationProvider } from 'react-google-multi-lang';
+import { TranslationProvider } from 'real-react-google-multi-lang';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -57,7 +57,7 @@ Use the `useTranslation` hook to create a custom language switcher.
 ```javascript
 // src/CustomLanguageSwitcher.js
 import React from 'react';
-import { useTranslation } from 'react-google-multi-lang';
+import { useTranslation } from 'real-react-google-multi-lang';
 
 const CustomLanguageSwitcher = () => {
   const { setLanguage } = useTranslation();
@@ -81,7 +81,7 @@ Wrap the components you want to translate with the `withTranslation` higher-orde
 ```javascript
 // src/MyComponent.js
 import React from 'react';
-import { withTranslation } from 'react-google-multi-lang';
+import { withTranslation } from 'real-react-google-multi-lang';
 
 const MyComponent = () => (
   <div>
@@ -142,7 +142,7 @@ Here is a complete example of how to use the package in your project.
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { TranslationProvider } from 'react-google-multi-lang';
+import { TranslationProvider } from 'real-react-google-multi-lang';
 
 ReactDOM.render(
 
@@ -161,7 +161,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 // src/CustomLanguageSwitcher.js
 import React from 'react';
-import { useTranslation } from 'react-google-multi-lang';
+import { useTranslation } from 'real-react-google-multi-lang';
 
 const CustomLanguageSwitcher = () => {
   const { setLanguage } = useTranslation();
@@ -179,7 +179,7 @@ export default CustomLanguageSwitcher;
 
 // src/MyComponent.js
 import React from 'react';
-import { withTranslation } from 'react-google-multi-lang';
+import { withTranslation } from 'real-react-google-multi-lang';
 
 const MyComponent = () => (
   <div>
