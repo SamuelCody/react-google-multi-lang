@@ -31,7 +31,7 @@
   "author": "Samuel Ayinde",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^0.30.0",
     "dotenv": "^16.4.5"
   },
   "devDependencies": {
