@@ -1,4 +1,4 @@
-# react-google-multi-lang with Redux Integration
+# real-react-google-multi-lang with Redux Integration
 
 A React library to support multi-language translation in React apps using Google Translation API, integrated with Redux for state management.
 
@@ -7,7 +7,7 @@ A React library to support multi-language translation in React apps using Google
 To install the package, run:
 
 ```bash
-npm install react-google-multi-lang redux react-redux
+npm install real-react-google-multi-lang redux react-redux
 ```
 
 ## Usage
@@ -87,7 +87,7 @@ export default store;
 
 ### 4. Wrap Your Application with Redux Provider and TranslationProvider
 
-Wrap your application with the `Provider` from `react-redux` and `TranslationProvider` from `react-google-multi-lang`.
+Wrap your application with the `Provider` from `react-redux` and `TranslationProvider` from `real-react-google-multi-lang`.
 
 **`src/index.js`**:
 
@@ -97,7 +97,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './App';
 import store from './redux/store';
-import { TranslationProvider } from 'react-google-multi-lang';
+import { TranslationProvider } from 'real-react-google-multi-lang';
 
 const apiKey = process.env.REACT_APP_TRANSLATION_API;
 
@@ -120,7 +120,7 @@ Connect your components to Redux to dispatch actions and select state. Use the `
 ```javascript
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useTranslation } from 'react-google-multi-lang';
+import { useTranslation } from 'real-react-google-multi-lang';
 import { setLanguage } from '../redux/actions/languageActions';
 
 const LanguageSwitcher = () => {
@@ -149,7 +149,7 @@ export default LanguageSwitcher;
 
 ```javascript
 import React from 'react';
-import { withTranslation } from 'react-google-multi-lang';
+import { withTranslation } from 'real-react-google-multi-lang';
 
 const ExampleComponent = () => (
   <div>
