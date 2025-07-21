@@ -1,6 +1,6 @@
 {
   "name": "real-react-google-multi-lang",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "description": "A library to support multi-language translation in React apps using Google Translation API.",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -31,21 +31,21 @@
   "author": "Samuel Ayinde",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.30.0",
-    "dotenv": "^16.4.5"
+    "axios": "^1.10.0",
+    "dotenv": "^17.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.14.5",
-    "@babel/core": "^7.14.6",
-    "@babel/preset-env": "^7.14.7",
-    "@babel/preset-react": "^7.14.5",
-    "@typescript-eslint/eslint-plugin": "^5.57.1",
-    "@typescript-eslint/parser": "^5.57.1",
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
     "babel-preset-minify": "^0.5.2",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^8.10.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.8"
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "prettier": "^3.6.2"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
